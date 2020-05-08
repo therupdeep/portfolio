@@ -116,12 +116,15 @@
     background-position: 40% 0;
 }
 
-.site-banner .banner-area .author .author-img h1{
-    font-family: var(--open-sans);
+.site-banner .banner-area .author .name-effect{
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
     font-size: 40;
-    color:black;
+    color: white;
 }
 
-.site-banner .banner-area .author .author-img h5{
+.site-banner .banner-area .author .type-effect{
+    font-family: var(--open-sans);
     font-size: 27;
+    color: white;
 }
