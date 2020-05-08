@@ -1,5 +1,25 @@
-/* Importing CSS Variables */
-@import url(./_variables.css);
+html,body {
+    margin: 0%;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+/* CSS Variables */
+:root{
+    --primary-color: #4458dc;
+    --primary-color2: #854fee;
+    --title-color: #141313;
+    --text-color: #777777;  
+    --border-color: #201f1f17;  
+    --gradient-color: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+    --shadow-color:  0px 10px 30px rgba(118, 85, 225, 0.3);
+    --box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+   
+
+    /* font family variables. */ 
+    --open-sans: 'Open Sans',sans-serif;
+}
 
 /* Global CSS till navbar styling*/
 
@@ -55,32 +75,26 @@
     box-shadow: var(--box-shadow);
 }
 
-.bg-img {
-    background-image: url(../assets/images/banner/Banner_image.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100vh;
-}
 
 /* Navbar Styling */
+.header-area .main-menu .navbar .navbar-brand {
+    padding: 0 2rem 0 5rem;
+}
 
 .header-area .main-menu .navbar {
-    margin-left: 8rem;
-    margin-right: 8rem;
+    padding: 1rem 14rem 1rem 13rem;
 }
-.header-area .main-menu .navbar .navbar-brand {
-    font-family: var(--open-sans);
-}
-.header-area .main-menu .navbar .nav-item {
-    padding-left: 0.8rem;
-    padding-right: 0.8rem;
-}
+ 
 .header-area .main-menu .nav-item .nav-link {
+    /* font property syntax 
+    font: font-style font-weight font-size/line-height font-family;
+    */
     font: normal 700 12px/2px var(--open-sans);
     text-transform: uppercase;
+    padding: 1.1rem;
     color: var(--title-color);
 }
+
 .header-area .main-menu .navbar-nav .active a{
     background: var(--gradient-color);
     -webkit-background-clip: text;
@@ -95,36 +109,37 @@
     background-clip: text;
 }
 
-/* Banner Styling */
+/* Banner Area */
 
-.site-banner .banner-area .author {
-    margin: 0;
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding-top: 40%;
+.site-main .site-banner{
+    background: url(../assets/images/banner/home-banner.png)no-repeat 0% 50%;
 }
 
-.site-banner .banner-area .author .author-img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    margin: auto;
-    background: url(../assets/images/banner/about.jpg) no-repeat;
-    background-size: 200%;
-    background-position: 40% 0;
+.site-main .site-banner .site-title h3{
+    padding-top: 35%;
+    font-weight: 500;
 }
 
-.site-banner .banner-area .author .name-effect{
-    font-family: 'Ubuntu', sans-serif;
-    text-transform: uppercase;
-    font-size: 40;
-    color: white;
+.site-main .site-banner .site-title h3::after{
+    content: " ";
+    height: 2px;
+    width: 18vw;
+    background: black;
+    display: inline-block;
+    margin-left: 5%;
+    transform: translateY(-10px);
 }
 
-.site-banner .banner-area .author .type-effect{
-    font-family: var(--open-sans);
-    font-size: 27;
-    color: white;
+.site-main .site-banner .site-title h1{
+    font-size: 4rem;
 }
+
+.site-main .site-banner .site-title h4{
+    font-size: 1.5rem;
+}
+
+.site-main .site-banner .banner-image > img{
+    padding: 7rem 0;
+    width: 90rem;
+}
+
