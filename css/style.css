@@ -77,7 +77,7 @@
     padding-right: 0.8rem;
 }
 .header-area .main-menu .nav-item .nav-link {
-    font: normal 700 12px/2px var(--open-sans);
+    font: normal 700 12px/20px var(--open-sans);
     text-transform: uppercase;
     color: var(--title-color);
 }
@@ -127,4 +127,28 @@
     font-family: var(--open-sans);
     font-size: 27;
     color: white;
+}
+
+.site-banner .banner-area .author .social-icons {
+    margin-top: 15px;
+    text-align: center;
+    margin-right: 2.7rem;
+}
+
+.site-banner .banner-area .author .social-icons ul .list {
+    list-style: none;
+    display: inline-block;
+    padding: 0.5rem;
+}
+
+.site-banner .banner-area .author .social-icons ul .list a .icon-white{
+    font-size: 22px;
+    color: white;
+    opacity: 0.6;
+}
+
+.site-banner .banner-area .author .social-icons ul .list a .icon-white:hover{
+    font-size: 22px;
+    color: white;
+    opacity: 1;
 }
