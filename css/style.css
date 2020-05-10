@@ -66,21 +66,19 @@
 /* Navbar Styling */
 
 .header-area .main-menu .navbar {
-    margin-left: 8rem;
-    margin-right: 8rem;
+    margin: 0 5.8rem 0 5.8rem;
 }
 .header-area .main-menu .navbar .navbar-brand {
     font-family: var(--open-sans);
 }
-.header-area .main-menu .navbar .nav-item {
-    padding-left: 0.8rem;
-    padding-right: 0.8rem;
-}
+
 .header-area .main-menu .nav-item .nav-link {
+    padding: 0.8rem;
     font: normal 700 12px/20px var(--open-sans);
     text-transform: uppercase;
     color: var(--title-color);
 }
+
 .header-area .main-menu .navbar-nav .active a{
     background: var(--gradient-color);
     -webkit-background-clip: text;
@@ -144,11 +142,9 @@
 .site-banner .banner-area .author .social-icons ul .list a .icon-white{
     font-size: 22px;
     color: white;
-    opacity: 0.6;
 }
 
 .site-banner .banner-area .author .social-icons ul .list a .icon-white:hover{
     font-size: 22px;
-    color: white;
-    opacity: 1;
+    color: black;
 }
