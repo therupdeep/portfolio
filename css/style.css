@@ -56,7 +56,11 @@
 }
 
 .bg-img {
-    background-image: url(../assets/images/banner/Banner_image.jpg);
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.6), 
+        rgba(0, 0, 0, 0.6)
+    ),
+    url(../assets/images/banner/Banner_image.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -64,47 +68,54 @@
 }
 
 /* Navbar Styling */
+.header-area {
+    height: 5%;
+}
 
 .header-area .main-menu .navbar {
     margin: 0 5.8rem 0 5.8rem;
 }
 .header-area .main-menu .navbar .navbar-brand {
     font-family: var(--open-sans);
+    color: whitesmoke;
 }
 
 .header-area .main-menu .nav-item .nav-link {
     padding: 0.8rem;
     font: normal 700 12px/20px var(--open-sans);
     text-transform: uppercase;
-    color: var(--title-color);
+    color: whitesmoke;
 }
 
 .header-area .main-menu .navbar-nav .active a{
-    background: var(--gradient-color);
+    background: #00B0DC;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
 .header-area .main-menu .navbar-nav a:hover{
-    background: var(--gradient-color);
+    background: #00B0DC;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
-/* Banner Styling */
 
-.site-banner .banner-area .author {
-    margin: 0;
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding-top: 40%;
+/* Banner Styling */
+.site-main {
+    height: 95%;
 }
 
-.site-banner .banner-area .author .author-img {
+ .author {
+    margin: 0;
+    width:100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+ .author-img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -114,37 +125,45 @@
     background-position: 40% 0;
 }
 
-.site-banner .banner-area .author .name-effect{
+ .name-effect{
+    padding-top: 1rem;
+    padding-bottom: 25px;
     font-family: 'Ubuntu', sans-serif;
     text-transform: uppercase;
     font-size: 40;
     color: white;
+    text-align: center;
 }
 
-.site-banner .banner-area .author .type-effect{
+ .type-effect{
     font-family: var(--open-sans);
     font-size: 27;
     color: white;
-}
-
-.site-banner .banner-area .author .social-icons {
-    margin-top: 15px;
     text-align: center;
-    margin-right: 2.7rem;
 }
 
-.site-banner .banner-area .author .social-icons ul .list {
+ .social-icons {
+    padding-left: 0;
+    padding-top: 20px;
+ }
+ .social-icons ul {
+    padding:0;
+    text-align: center;
+ }
+ .social-icons ul .list {
+    padding-left: 8px;
+    padding-right: 8px;
     list-style: none;
     display: inline-block;
-    padding: 0.5rem;
 }
 
-.site-banner .banner-area .author .social-icons ul .list a .icon-white{
+ .social-icons ul .list a .icon-white{
     font-size: 22px;
     color: white;
 }
 
-.site-banner .banner-area .author .social-icons ul .list a .icon-white:hover{
+ .social-icons ul .list a .icon-white:hover{
     font-size: 22px;
     color: black;
 }
+
