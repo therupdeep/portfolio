@@ -172,10 +172,12 @@
  .social-icons ul .list a .icon-white{
     font-size: 22px;
     color: white;
+    opacity: 0.6;
 }
 
  .social-icons ul .list a .icon-white:hover{
     font-size: 22px;
-    color: black;
+    color: white;
+    opacity: 1;
 }
 
