@@ -100,7 +100,19 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
-
+@media screen and (max-width: 768px) {
+    .header-area .main-menu .navbar{
+        margin: 0;
+        z-index:1000;
+    }
+    .navbar-toggler{
+        background-color: rgba(255, 255, 255, 0.2)
+    }
+    .navbar-collapse {
+        background-color: black;
+        width:100%;
+    }
+  }
 
 /* Banner Styling */
 .site-main {
