@@ -10,7 +10,6 @@ var typed = new Typed('#typed', {
 });
 
 function togglerFunction() {
-    document.getElementsByClassName("navbar").style.margin = "0";
-    document.getElementsByClassName("navbar").style.zIndex = "1000";
-    document.getElementsByClassName("navbar-collapse").style.backgroundColor = "black";
+    document.getElementsByClassName("navbar")[0].style.zIndex = "1000";
+    document.getElementsByClassName("navbar-collapse")[0].style.backgroundColor = "black";
 }

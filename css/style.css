@@ -72,8 +72,8 @@
     height: 5%;
 }
 
-.header-area .main-menu {
-    padding: 0 5.8rem 0 5.8rem;
+.header-area .main-menu .navbar{
+    margin: 0 5.8rem 0 5.8rem;
 }
 .header-area .main-menu .navbar .navbar-brand {
     font-family: var(--open-sans);
@@ -109,15 +109,12 @@
     outline: none;
     box-shadow: none;
 }
-/* @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .header-area .main-menu .navbar{
         margin: 0;
-        z-index:1000;
     }
-    .navbar-collapse {
-        background-color: black;
-    }
-  } */
+
+  }
 
 /* Banner Styling */
 .site-main {
