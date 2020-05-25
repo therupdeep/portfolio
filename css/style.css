@@ -105,8 +105,8 @@
         margin: 0;
         z-index:1000;
     }
-    .navbar-toggler{
-        background-color: rgba(255, 255, 255, 0.2)
+    .navbar-toggler {
+        border: none;
     }
     .navbar-collapse {
         background-color: black;
