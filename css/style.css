@@ -63,7 +63,7 @@
     url(../assets/images/banner/Banner_image.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
 }
 
@@ -72,8 +72,8 @@
     height: 5%;
 }
 
-.header-area .main-menu .navbar {
-    margin: 0 5.8rem 0 5.8rem;
+.header-area .main-menu {
+    padding: 0 5.8rem 0 5.8rem;
 }
 .header-area .main-menu .navbar .navbar-brand {
     font-family: var(--open-sans);
@@ -100,19 +100,24 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
-@media screen and (max-width: 768px) {
+.navbar-toggler {
+    border: none;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+/* @media screen and (max-width: 768px) {
     .header-area .main-menu .navbar{
         margin: 0;
         z-index:1000;
     }
-    .navbar-toggler {
-        border: none;
-    }
     .navbar-collapse {
         background-color: black;
-        width:100%;
     }
-  }
+  } */
 
 /* Banner Styling */
 .site-main {
