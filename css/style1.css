@@ -1,7 +1,5 @@
 /* display: table + margin: 0 auto ,encloses a div to the text only like in social icons */
-* {
-  color: whitesmoke;
-}
+
 html,
 body {
   margin: 0;
@@ -10,7 +8,7 @@ body {
   width: 100vw;
   height: 100vh;
   overflow-x: hidden;
-  font-family: 'Open Sans', sans-serif;
+  color: black;
 }
 .bg-img {
     background: linear-gradient(
@@ -23,6 +21,7 @@ body {
     width: 100vw;
     height: 100vh;
 }
+
 .navbar .navbar-nav .nav-item.active .nav-link{
   background-color: transparent;
   color: #00B0DC;
@@ -36,6 +35,63 @@ body {
 }
 .navbar.navbar-transparent {
     padding-top: 0;
+}
+.site-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.author-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: auto;
+  background: url(../assets/images/banner/about1.jpg) no-repeat;
+  background-size: 100%;
+  background-position: 40% 0;
+}
+
+.name{
+  padding-top: 1rem;
+  padding-bottom: 25px;
+  text-transform: uppercase;
+  font-size: 3vw;
+  color: white;
+  text-align: center;
+}
+
+.type-effect{
+  font-size: 1.6vw;
+  color: white;
+  text-align: center;
+}
+
+.social-icons {
+  padding-left: 0;
+  padding-top: 20px;
+}
+.social-icons ul {
+  padding:0;
+  text-align: center;
+}
+.social-icons ul .list {
+  padding-left: 8px;
+  padding-right: 8px;
+  list-style: none;
+  display: inline-block;
+}
+
+.social-icons ul .list a .icon-white{
+  font-size: 22px;
+  color: white;
+  opacity: 0.6;
+}
+
+.social-icons ul .list a .icon-white:hover{
+  font-size: 22px;
+  color: white;
+  opacity: 1;
 }
 /* .navbar.navbar-transparent .navbar-toggler .navbar-toggler-icon {
   background-color: whitesmoke;
