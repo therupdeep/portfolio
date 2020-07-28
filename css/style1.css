@@ -5,8 +5,6 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  width: 100vw;
-  height: 100vh;
   overflow-x: hidden;
   color: black;
 }
@@ -21,6 +19,7 @@ body {
     width: 100vw;
     height: 100vh;
 }
+/* Start Header Styles */
 
 .navbar .navbar-nav .nav-item.active .nav-link{
   background-color: transparent;
@@ -30,12 +29,17 @@ body {
 
 .navbar .navbar-nav .nav-item .nav-link:focus, .navbar .navbar-nav .nav-item .nav-link:hover {
   background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
+  border-radius: 40px;
   color: #00B0DC;
 }
 .navbar.navbar-transparent {
-    padding-top: 0;
+    padding-top: 0.3rem;
 }
+
+/* End Header Styles */
+
+/* Start Banner Styles */
+
 .site-main {
   display: flex;
   justify-content: center;
@@ -56,22 +60,25 @@ body {
   padding-top: 1rem;
   padding-bottom: 25px;
   text-transform: uppercase;
-  font-size: 3vw;
+  font-size: 2.5rem;
   color: white;
   text-align: center;
 }
 
 .type-effect{
-  font-size: 1.6vw;
+  font-size: 1.3rem;
   color: white;
   text-align: center;
 }
 
 .social-icons {
-  padding-left: 0;
   padding-top: 20px;
 }
+
 .social-icons ul {
+  padding-top: 20px;
+  width: 20rem;
+  height: 2rem;
   padding:0;
   text-align: center;
 }
@@ -93,6 +100,27 @@ body {
   color: white;
   opacity: 1;
 }
-/* .navbar.navbar-transparent .navbar-toggler .navbar-toggler-icon {
-  background-color: whitesmoke;
-} */
+
+/* End Banner Styles */
+
+/* Start About Me Styles */
+
+.about-me-text {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 5vh;
+}
+
+/* End About Me Styles */
+
+/* Start Experience and Skills Styles */
+
+.experience-list {
+  padding: 0;
+  border-left: 2px solid transparent;
+  list-style: none;
+}
+.experience-list-item:hover,.experience-list-item:active {
+  border-left: 2px solid blue;
+}
+/* End Experience and Skills Styles */
