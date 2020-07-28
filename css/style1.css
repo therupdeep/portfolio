@@ -120,7 +120,15 @@ body {
   border-left: 2px solid transparent;
   list-style: none;
 }
+.experience-list-item {
+  padding: 0 1rem 0 1rem;
+}
 .experience-list-item:hover,.experience-list-item:active {
+  padding: 0 1rem 0 1rem;
   border-left: 2px solid blue;
+}
+.skill-list {
+  padding: 0;
+  list-style: none;
 }
 /* End Experience and Skills Styles */
