@@ -107,7 +107,6 @@ body {
 
 .about-me-text {
   font-size: 3rem;
-  text-align: center;
   margin-bottom: 5vh;
 }
 
@@ -132,3 +131,12 @@ body {
   list-style: none;
 }
 /* End Experience and Skills Styles */
+
+/* Start Projects Area Styles */
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
