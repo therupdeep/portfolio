@@ -139,4 +139,6 @@ body {
   flex-wrap: wrap;
   justify-content: center;
 }
-
+.bmd-form-group label {
+  color: black;
+}
