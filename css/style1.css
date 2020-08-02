@@ -7,19 +7,9 @@ body {
   box-sizing: border-box;
   overflow-x: hidden;
   color: whitesmoke;
-  background: url(../assets/images/bg.jpg);
+  background-color: #212121;
 }
-/* .bg-img {
-    background: linear-gradient(
-        rgba(0, 0, 0, 0.6), 
-        rgba(0, 0, 0, 0.6)
-    ),
-    url(../assets/images/banner/Banner_image.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100vw;
-    height: 100vh;
-} */
+
 /* Start Header Styles */
 
 .navbar .navbar-nav .nav-item.active .nav-link{
