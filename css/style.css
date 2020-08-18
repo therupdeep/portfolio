@@ -1,222 +1,131 @@
+/* display: table + margin: 0 auto ,encloses a div to the text only like in social icons */
 
-html,body {
-    margin: 0%;
-    padding: 0;
-    box-sizing: border-box;
-    width: 100%;
-    height: 100%;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  color: whitesmoke;
+  background-color: #121212;
 }
 
-/* CSS Variables */
-:root{
-    --primary-color: #4458dc;
-    --primary-color2: #854fee;
-    --title-color: #141313;
-    --text-color: #777777;  
-    --border-color: #201f1f17;  
-    --gradient-color: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
-    --shadow-color:  0px 10px 30px rgba(118, 85, 225, 0.3);
-    --box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
-   
+/* Start Header Styles */
 
-    /* font family variables. */ 
-    --open-sans: 'Open Sans',cursive;
+.navbar .navbar-nav .nav-item.active .nav-link{
+  background-color: transparent;
+  color: #03DAC6;
+  border-radius: 0;
 }
 
-/* Global CSS till navbar styling*/
-
-.title-text{
-    /* font property syntax 
-    font: font-style font-weight font-size/line-height font-family;
-    */
-    font: normal bold 50px/72px var(--open-sans);
+.navbar .navbar-nav .nav-item .nav-link:focus, .navbar .navbar-nav .nav-item .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 40px;
+  color: #03DAC6;
+}
+.navbar.navbar-transparent {
+    padding-top: 0.3rem;
 }
 
-/* Buttons */
-.button{
-    padding: .8rem 2.2rem;
-    font: normal 500 16px/20px var(--open-sans);
-    position: relative;
-    border: 3px solid transparent;
-    border-radius: 4px;
-}
+/* End Header Styles */
 
-.button.primary-button{
-    background: var(--gradient-color);
-    background-clip: padding-box;
-    color: whitesmoke;
-    transition: background .6s ease;
-    box-shadow: var(--box-shadow);
-}
+/* Start Banner Styles */
 
-.button.primary-button:hover{
-    background: whitesmoke;
-    background-clip: padding-box;
-    color: black;
-}
-
-.button.primary-button::after, .button.secondary-button::after{
-    position: absolute;
-    top: -2px; left: -2px;
-    bottom: -2px;  right: -2px;
-    background: var(--gradient-color);
-    content: ' ';
-    z-index: -1;
-    border-radius: 4px;
-}
-
-.button.secondary-button{
-    background: white;
-    background-clip: padding-box;
-    transition: background .6s ease;
-}
-
-.button.secondary-button:hover{
-    background: var(--gradient-color);
-    color: whitesmoke;
-    box-shadow: var(--box-shadow);
-}
-
-.bg-img {
-    background: linear-gradient(
-        rgba(0, 0, 0, 0.6), 
-        rgba(0, 0, 0, 0.6)
-    ),
-    url(../assets/images/banner/Banner_image.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100vw;
-    height: 100vh;
-}
-
-/* Navbar Styling */
-.header-area {
-    height: 5%;
-}
-
-.header-area .main-menu .navbar{
-    margin: 0 5.8rem 0 5.8rem;
-}
-.header-area .main-menu .navbar .navbar-brand {
-    font-family: var(--open-sans);
-    color: whitesmoke;
-}
-
-.header-area .main-menu .nav-item .nav-link {
-    padding: 0.8rem;
-    font: normal 700 12px/20px var(--open-sans);
-    text-transform: uppercase;
-    color: whitesmoke;
-}
-
-.header-area .main-menu .navbar-nav .active a{
-    background: #00B0DC;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
-.header-area .main-menu .navbar-nav a:hover{
-    background: #00B0DC;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-.navbar-toggler {
-    border: none;
-}
-.navbar-toggler:focus,
-.navbar-toggler:active,
-.navbar-toggler-icon:focus {
-    outline: none;
-    box-shadow: none;
-}
-@media screen and (max-width: 768px) {
-    .header-area .main-menu .navbar{
-        margin: 0;
-    }
-
-  }
-
-/* Banner Styling */
 .site-main {
-    height: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.author-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: auto;
+  background: url(../assets/images/banner/about1.jpg) no-repeat;
+  background-size: 100%;
+  background-position: 40% 0;
 }
 
- .author {
-    margin: 0;
-    width:100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
- .author-img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    margin: auto;
-    background: url(../assets/images/banner/about.jpg) no-repeat;
-    background-size: 200%;
-    background-position: 40% 0;
+.name{
+  padding-top: 1rem;
+  padding-bottom: 25px;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  text-align: center;
 }
 
- .name-effect{
-    padding-top: 1rem;
-    padding-bottom: 25px;
-    font-family: 'Ubuntu', sans-serif;
-    text-transform: uppercase;
-    font-size: 40;
-    color: white;
-    text-align: center;
+.type-effect{
+  font-size: 1.3rem;
+  text-align: center;
 }
 
- .type-effect{
-    font-family: var(--open-sans);
-    font-size: 27;
-    color: white;
-    text-align: center;
+.social-icons {
+  padding-top: 20px;
 }
 
- .social-icons {
-    padding-left: 0;
-    padding-top: 20px;
- }
- .social-icons ul {
-    padding:0;
-    text-align: center;
- }
- .social-icons ul .list {
-    padding-left: 8px;
-    padding-right: 8px;
-    list-style: none;
-    display: inline-block;
+.social-icons ul {
+  padding-top: 20px;
+  width: 20rem;
+  height: 2rem;
+  padding:0;
+  text-align: center;
+}
+.social-icons ul .list {
+  padding-left: 8px;
+  padding-right: 8px;
+  list-style: none;
+  display: inline-block;
 }
 
- .social-icons ul .list a .icon-white{
-    font-size: 22px;
-    color: white;
-    opacity: 0.6;
+.social-icons ul .list a .icon-white{
+  font-size: 22px;
+  opacity: 0.6;
 }
 
- .social-icons ul .list a .icon-white:hover{
-    font-size: 22px;
-    color: white;
-    opacity: 1;
+.social-icons ul .list a .icon-white:hover{
+  font-size: 22px;
+  opacity: 1;
 }
-.about {
-    padding-top: 2rem;
-    width: 100vw;
-}
+
+/* End Banner Styles */
+
+/* Start About Me Styles */
+
 .about-me-text {
-    margin-bottom: 50px;
-    font-family: 'Ubuntu',sans-serif;
-    text-align: center;
+  font-size: 3rem;
+  margin-bottom: 5vh;
 }
 
-.profile-image {
-    max-width: 100%;
+/* End About Me Styles */
 
+/* Start Experience and Skills Styles */
+
+.experience-list {
+  padding: 0;
+  border-left: 2px solid transparent;
+  list-style: none;
 }
+.experience-list-item {
+  padding: 0 1rem 0 1rem;
+}
+.experience-list-item:hover,.experience-list-item:active {
+  padding: 0 1rem 0 1rem;
+  border-left: 2px solid blue;
+}
+.skill-list {
+  padding: 0;
+  list-style: none;
+}
+/* End Experience and Skills Styles */
 
+/* Start Projects Area Styles */
 
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.bmd-form-group label {
+  color: black;
+}
