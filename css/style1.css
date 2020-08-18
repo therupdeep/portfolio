@@ -7,21 +7,21 @@ body {
   box-sizing: border-box;
   overflow-x: hidden;
   color: whitesmoke;
-  background-color: black;
+  background-color: #121212;
 }
 
 /* Start Header Styles */
 
 .navbar .navbar-nav .nav-item.active .nav-link{
   background-color: transparent;
-  color: #00B0DC;
+  color: #03DAC6;
   border-radius: 0;
 }
 
 .navbar .navbar-nav .nav-item .nav-link:focus, .navbar .navbar-nav .nav-item .nav-link:hover {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 40px;
-  color: #00B0DC;
+  color: #03DAC6;
 }
 .navbar.navbar-transparent {
     padding-top: 0.3rem;
